@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A3C48D62CD5F0E9008C76E5 /* TimerStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3C48D52CD5F0E9008C76E5 /* TimerStatus.swift */; };
+		9A3C48D92CD5F133008C76E5 /* TimerStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3C48D82CD5F133008C76E5 /* TimerStatusTests.swift */; };
+		9AC4ABF32CB33443007508BD /* ChronotomatoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4ABF22CB33443007508BD /* ChronotomatoApp.swift */; };
+		9AC4ABF52CB33443007508BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4ABF42CB33443007508BD /* ContentView.swift */; };
+		9AC4ABF72CB33444007508BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC4ABF62CB33444007508BD /* Assets.xcassets */; };
+		9AC4ABFA2CB33444007508BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC4ABF92CB33444007508BD /* Preview Assets.xcassets */; };
+		9AC4AC042CB33444007508BD /* ChronotomatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4AC032CB33444007508BD /* ChronotomatoTests.swift */; };
+		9AC4AC0E2CB33444007508BD /* ChronotomatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4AC0D2CB33444007508BD /* ChronotomatoUITests.swift */; };
+		9AC4AC102CB33444007508BD /* ChronotomatoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC4AC0F2CB33444007508BD /* ChronotomatoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AC4AC002CB33444007508BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AC4ABE72CB33443007508BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AC4ABEE2CB33443007508BD;
+			remoteInfo = Chronotomato;
+		};
+		9AC4AC0A2CB33444007508BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AC4ABE72CB33443007508BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AC4ABEE2CB33443007508BD;
+			remoteInfo = Chronotomato;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A3C48D52CD5F0E9008C76E5 /* TimerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatus.swift; sourceTree = "<group>"; };
+		9A3C48D82CD5F133008C76E5 /* TimerStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatusTests.swift; sourceTree = "<group>"; };
+		9AC4ABEF2CB33443007508BD /* Chronotomato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chronotomato.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC4ABF22CB33443007508BD /* ChronotomatoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronotomatoApp.swift; sourceTree = "<group>"; };
+		9AC4ABF42CB33443007508BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9AC4ABF62CB33444007508BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AC4ABF92CB33444007508BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9AC4ABFF2CB33444007508BD /* ChronotomatoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChronotomatoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC4AC032CB33444007508BD /* ChronotomatoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronotomatoTests.swift; sourceTree = "<group>"; };
+		9AC4AC092CB33444007508BD /* ChronotomatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChronotomatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC4AC0D2CB33444007508BD /* ChronotomatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronotomatoUITests.swift; sourceTree = "<group>"; };
+		9AC4AC0F2CB33444007508BD /* ChronotomatoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronotomatoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AC4ABEC2CB33443007508BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC4ABFC2CB33444007508BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC4AC062CB33444007508BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A3C48D42CD5F0D7008C76E5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9A3C48D52CD5F0E9008C76E5 /* TimerStatus.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9A3C48D72CD5F110008C76E5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9A3C48D82CD5F133008C76E5 /* TimerStatusTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		9AC4ABE62CB33443007508BD = {
+			isa = PBXGroup;
+			children = (
+				9AC4ABF12CB33443007508BD /* Chronotomato */,
+				9AC4AC022CB33444007508BD /* ChronotomatoTests */,
+				9AC4AC0C2CB33444007508BD /* ChronotomatoUITests */,
+				9AC4ABF02CB33443007508BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AC4ABF02CB33443007508BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AC4ABEF2CB33443007508BD /* Chronotomato.app */,
+				9AC4ABFF2CB33444007508BD /* ChronotomatoTests.xctest */,
+				9AC4AC092CB33444007508BD /* ChronotomatoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AC4ABF12CB33443007508BD /* Chronotomato */ = {
+			isa = PBXGroup;
+			children = (
+				9A3C48D42CD5F0D7008C76E5 /* Domain */,
+				9AC4ABF22CB33443007508BD /* ChronotomatoApp.swift */,
+				9AC4ABF42CB33443007508BD /* ContentView.swift */,
+				9AC4ABF62CB33444007508BD /* Assets.xcassets */,
+				9AC4ABF82CB33444007508BD /* Preview Content */,
+			);
+			path = Chronotomato;
+			sourceTree = "<group>";
+		};
+		9AC4ABF82CB33444007508BD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9AC4ABF92CB33444007508BD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9AC4AC022CB33444007508BD /* ChronotomatoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A3C48D72CD5F110008C76E5 /* Domain */,
+				9AC4AC032CB33444007508BD /* ChronotomatoTests.swift */,
+			);
+			path = ChronotomatoTests;
+			sourceTree = "<group>";
+		};
+		9AC4AC0C2CB33444007508BD /* ChronotomatoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9AC4AC0D2CB33444007508BD /* ChronotomatoUITests.swift */,
+				9AC4AC0F2CB33444007508BD /* ChronotomatoUITestsLaunchTests.swift */,
+			);
+			path = ChronotomatoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AC4ABEE2CB33443007508BD /* Chronotomato */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC4AC132CB33444007508BD /* Build configuration list for PBXNativeTarget "Chronotomato" */;
+			buildPhases = (
+				9AC4ABEB2CB33443007508BD /* Sources */,
+				9AC4ABEC2CB33443007508BD /* Frameworks */,
+				9AC4ABED2CB33443007508BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chronotomato;
+			productName = Chronotomato;
+			productReference = 9AC4ABEF2CB33443007508BD /* Chronotomato.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AC4ABFE2CB33444007508BD /* ChronotomatoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC4AC162CB33444007508BD /* Build configuration list for PBXNativeTarget "ChronotomatoTests" */;
+			buildPhases = (
+				9AC4ABFB2CB33444007508BD /* Sources */,
+				9AC4ABFC2CB33444007508BD /* Frameworks */,
+				9AC4ABFD2CB33444007508BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AC4AC012CB33444007508BD /* PBXTargetDependency */,
+			);
+			name = ChronotomatoTests;
+			productName = ChronotomatoTests;
+			productReference = 9AC4ABFF2CB33444007508BD /* ChronotomatoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AC4AC082CB33444007508BD /* ChronotomatoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC4AC192CB33444007508BD /* Build configuration list for PBXNativeTarget "ChronotomatoUITests" */;
+			buildPhases = (
+				9AC4AC052CB33444007508BD /* Sources */,
+				9AC4AC062CB33444007508BD /* Frameworks */,
+				9AC4AC072CB33444007508BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AC4AC0B2CB33444007508BD /* PBXTargetDependency */,
+			);
+			name = ChronotomatoUITests;
+			productName = ChronotomatoUITests;
+			productReference = 9AC4AC092CB33444007508BD /* ChronotomatoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AC4ABE72CB33443007508BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					9AC4ABEE2CB33443007508BD = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					9AC4ABFE2CB33444007508BD = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 9AC4ABEE2CB33443007508BD;
+					};
+					9AC4AC082CB33444007508BD = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 9AC4ABEE2CB33443007508BD;
+					};
+				};
+			};
+			buildConfigurationList = 9AC4ABEA2CB33443007508BD /* Build configuration list for PBXProject "Chronotomato" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AC4ABE62CB33443007508BD;
+			packageReferences = (
+				9A3C48DA2CD5F4CF008C76E5 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
+			productRefGroup = 9AC4ABF02CB33443007508BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AC4ABEE2CB33443007508BD /* Chronotomato */,
+				9AC4ABFE2CB33444007508BD /* ChronotomatoTests */,
+				9AC4AC082CB33444007508BD /* ChronotomatoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AC4ABED2CB33443007508BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC4ABFA2CB33444007508BD /* Preview Assets.xcassets in Resources */,
+				9AC4ABF72CB33444007508BD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC4ABFD2CB33444007508BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC4AC072CB33444007508BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AC4ABEB2CB33443007508BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC4ABF52CB33443007508BD /* ContentView.swift in Sources */,
+				9AC4ABF32CB33443007508BD /* ChronotomatoApp.swift in Sources */,
+				9A3C48D62CD5F0E9008C76E5 /* TimerStatus.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC4ABFB2CB33444007508BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC4AC042CB33444007508BD /* ChronotomatoTests.swift in Sources */,
+				9A3C48D92CD5F133008C76E5 /* TimerStatusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AC4AC052CB33444007508BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AC4AC0E2CB33444007508BD /* ChronotomatoUITests.swift in Sources */,
+				9AC4AC102CB33444007508BD /* ChronotomatoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AC4AC012CB33444007508BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AC4ABEE2CB33443007508BD /* Chronotomato */;
+			targetProxy = 9AC4AC002CB33444007508BD /* PBXContainerItemProxy */;
+		};
+		9AC4AC0B2CB33444007508BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AC4ABEE2CB33443007508BD /* Chronotomato */;
+			targetProxy = 9AC4AC0A2CB33444007508BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9AC4AC112CB33444007508BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AC4AC122CB33444007508BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AC4AC142CB33444007508BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Chronotomato/Preview Content\"";
+				DEVELOPMENT_TEAM = KSKQSTGSQP;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mizoguche.Chronotomato;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AC4AC152CB33444007508BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Chronotomato/Preview Content\"";
+				DEVELOPMENT_TEAM = KSKQSTGSQP;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mizoguche.Chronotomato;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9AC4AC172CB33444007508BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KSKQSTGSQP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mizoguche.ChronotomatoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chronotomato.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chronotomato";
+			};
+			name = Debug;
+		};
+		9AC4AC182CB33444007508BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KSKQSTGSQP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mizoguche.ChronotomatoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chronotomato.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chronotomato";
+			};
+			name = Release;
+		};
+		9AC4AC1A2CB33444007508BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KSKQSTGSQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mizoguche.ChronotomatoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chronotomato;
+			};
+			name = Debug;
+		};
+		9AC4AC1B2CB33444007508BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KSKQSTGSQP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.mizoguche.ChronotomatoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chronotomato;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AC4ABEA2CB33443007508BD /* Build configuration list for PBXProject "Chronotomato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC4AC112CB33444007508BD /* Debug */,
+				9AC4AC122CB33444007508BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC4AC132CB33444007508BD /* Build configuration list for PBXNativeTarget "Chronotomato" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC4AC142CB33444007508BD /* Debug */,
+				9AC4AC152CB33444007508BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC4AC162CB33444007508BD /* Build configuration list for PBXNativeTarget "ChronotomatoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC4AC172CB33444007508BD /* Debug */,
+				9AC4AC182CB33444007508BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC4AC192CB33444007508BD /* Build configuration list for PBXNativeTarget "ChronotomatoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AC4AC1A2CB33444007508BD /* Debug */,
+				9AC4AC1B2CB33444007508BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A3C48DA2CD5F4CF008C76E5 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.57.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = 9AC4ABE72CB33443007508BD /* Project object */;
+}
