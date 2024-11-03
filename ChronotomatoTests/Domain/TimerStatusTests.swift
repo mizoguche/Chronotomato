@@ -2,66 +2,80 @@
 import XCTest
 
 final class TimerStatusTests: XCTestCase {
-    func testPlayingToPlaying() {
-        let initialStatus = TimerStatus.playing(presetTime: 300, remainingTime: 120)
-        let nextStatus = initialStatus.toNextStatus()
-
-        if case .playing(let presetTime, let remainingTime) = nextStatus {
-            XCTAssertEqual(presetTime, 300)
-            XCTAssertEqual(remainingTime, 119)
-        } else {
-            XCTFail("Expected playing Status")
-        }
+    func testFormatTime() {
+        XCTAssertEqual(formatTime(59 * 1), "00:59")
+        XCTAssertEqual(formatTime(60 * 1), "01:00")
+        XCTAssertEqual(formatTime(60 * 60), "60:00")
+        XCTAssertEqual(formatTime(0), "00:00")
     }
 
-    func testPlayingToAlarming() {
-        let initialStatus = TimerStatus.playing(presetTime: 300, remainingTime: 1)
-        let nextStatus = initialStatus.toNextStatus()
-
-        if case .alarming = nextStatus {
-            XCTAssertTrue(true)
-        } else {
-            XCTFail("Expected alarming Status. nextStatus: \(nextStatus)")
-        }
+    // MARK: - TimerStatus.play
+    func testPlayOnStopped() {
+        let status = TimerStatus.stopped(currentPresetIndex: 0)
+        let nextStatus = try! status.play()
+        XCTAssertEqual(nextStatus, TimerStatus.playing(currentPresetIndex: 0, remainingTime: presets[0]))
     }
 
-    func testAlarmingToStopped() {
-        let initialStatus = TimerStatus.alarming
-        let nextStatus = initialStatus.toNextStatus()
-
-        if case .stopped(let presetTime) = nextStatus {
-            XCTAssertEqual(presetTime, 0)
-        } else {
-            XCTFail("Expected stopped Status")
-        }
+    func testPlayOnPlaying() {
+        let status = TimerStatus.playing(currentPresetIndex: 0, remainingTime: 10)
+        let nextStatus = try! status.play()
+        XCTAssertEqual(nextStatus, status)
     }
 
-    func testStoppedToPlaying() {
-        let initialStatus = TimerStatus.stopped(presetTime: 300)
-        let nextStatus = initialStatus.toNextStatus()
-
-        if case .playing(let presetTime, let remainingTime) = nextStatus {
-            XCTAssertEqual(presetTime, 300)
-            XCTAssertEqual(remainingTime, 300)
-        } else {
-            XCTFail("Expected playing Status")
-        }
+    func testPlayOnAlarming() {
+        let status = TimerStatus.alarming(currentPresetIndex: 0)
+        XCTAssertThrowsError(try status.play())
     }
 
-    func testRemainingTime() {
-        let playingStatusSeconds = TimerStatus.playing(presetTime: 300, remainingTime: 59 * 1)
-        XCTAssertEqual(playingStatusSeconds.remainingTime, "00:59")
+    // MARK: - TimerStatus.stop
+    func testStopOnStopped() {
+        let status = TimerStatus.stopped(currentPresetIndex: 0)
+        XCTAssertThrowsError(try status.stop())
+    }
 
-        let playingStatusMinutes = TimerStatus.playing(presetTime: 300, remainingTime: 60 * 1)
-        XCTAssertEqual(playingStatusMinutes.remainingTime, "01:00")
+    func testStopOnPlaying() {
+        let status = TimerStatus.playing(currentPresetIndex: 0, remainingTime: 10)
+        let nextStatus = try! status.stop()
+        XCTAssertEqual(nextStatus, TimerStatus.stopped(currentPresetIndex: 0))
+    }
 
-        let playingStatusHour = TimerStatus.playing(presetTime: 300, remainingTime: 60 * 60)
-        XCTAssertEqual(playingStatusHour.remainingTime, "60:00")
+    func testStopOnAlarming() {
+        let status = TimerStatus.alarming(currentPresetIndex: 0)
+        let nextStatus = try! status.stop()
+        XCTAssertEqual(nextStatus, TimerStatus.stopped(currentPresetIndex: 1))
+    }
 
-        let alarmingStatus = TimerStatus.alarming
-        XCTAssertEqual(alarmingStatus.remainingTime, "00:00")
+    // MARK: - TimerStatus.alarm
+    func testAlarmOnStopped() {
+        let status = TimerStatus.stopped(currentPresetIndex: 0)
+        XCTAssertThrowsError(try status.alarm())
+    }
 
-        let stoppedStatus = TimerStatus.stopped(presetTime: 300)
-        XCTAssertEqual(stoppedStatus.remainingTime, "00:00")
+    func testAlarmOnPlaying() {
+        let status = TimerStatus.playing(currentPresetIndex: 0, remainingTime: 10)
+        let nextStatus = try! status.alarm()
+        XCTAssertEqual(nextStatus, TimerStatus.alarming(currentPresetIndex: 0))
+    }
+
+    func testAlarmOnAlarming() {
+        let status = TimerStatus.alarming(currentPresetIndex: 0)
+        XCTAssertThrowsError(try status.alarm())
+    }
+
+    // MARK: - TimerStatus.tick
+    func testTickOnPlaying() {
+        let status = TimerStatus.playing(currentPresetIndex: 0, remainingTime: 10)
+        let nextStatus = try! status.tick()
+        XCTAssertEqual(nextStatus, TimerStatus.playing(currentPresetIndex: 0, remainingTime: 9))
+    }
+
+    func testTickOnStopped() {
+        let status = TimerStatus.stopped(currentPresetIndex: 0)
+        XCTAssertThrowsError(try status.tick())
+    }
+
+    func testTickOnAlarming() {
+        let status = TimerStatus.alarming(currentPresetIndex: 0)
+        XCTAssertThrowsError(try status.tick())
     }
 }
