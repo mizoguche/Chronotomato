@@ -5,6 +5,23 @@ enum TimerStatus {
     case alarming
     case stopped(presetTime: Int)
 
+    var remainingTime: String {
+        switch self {
+        case .playing(_, let remainingTime):
+            let formatter = DateComponentsFormatter()
+            formatter.unitsStyle = .positional
+            formatter.zeroFormattingBehavior = .pad
+            formatter.allowedUnits = [.minute, .second]
+
+            let interval = TimeInterval(remainingTime)
+            return formatter.string(from: interval) ?? "Error"
+        case .alarming:
+            return "00:00"
+        case .stopped:
+            return "00:00"
+        }
+    }
+
     func toNextStatus() -> TimerStatus {
         switch self {
         case .playing(let presetTime, let remainingTime):
