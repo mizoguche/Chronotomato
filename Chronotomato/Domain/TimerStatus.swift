@@ -25,8 +25,10 @@ enum TimerStatus: Equatable {
         switch self {
         case .playing(_, let remainingTime):
             return formatTime(remainingTime)
-        case .alarming, .stopped:
+        case .alarming:
             return formatTime(0)
+        case .stopped(let currentPresetIndex):
+            return formatTime(presets[currentPresetIndex])
         }
     }
 

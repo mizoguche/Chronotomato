@@ -11,7 +11,7 @@ import SwiftUI
 struct ChronotomatoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TimerView()
         }
     }
 }
