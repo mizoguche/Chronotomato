@@ -38,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9A2028922CD8C18700DE97FA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		9A3C48D52CD5F0E9008C76E5 /* TimerStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatus.swift; sourceTree = "<group>"; };
 		9A3C48D82CD5F133008C76E5 /* TimerStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStatusTests.swift; sourceTree = "<group>"; };
 		9A3C48DD2CD75025008C76E5 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
@@ -83,7 +82,6 @@
 		9A2028912CD8C18700DE97FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9A2028922CD8C18700DE97FA /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
